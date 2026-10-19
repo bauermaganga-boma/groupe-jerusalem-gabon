@@ -24,20 +24,23 @@
     { id: 'bonjour', keys: ['bonjour', 'bonsoir', 'salut', 'hello', 'coucou', 'bjr'],
       answer: "Bonjour et bienvenue chez <strong>GROUPE JÉRUSALEM</strong> ! Je peux vous renseigner sur la location de véhicules, nos tarifs, nos services audiovisuels et d'impression, ou vous aider à demander un devis." },
     { id: 'services', keys: ['service', 'prestation', 'metier', 'que faites', 'activite', 'domaine', 'proposez', 'offre', 'competence'],
-      answer: "Le Groupe propose :<ul><li><strong>Location de véhicules</strong> avec chauffeur</li><li><strong>Reportage, montage vidéo, photographie</strong>, infographie, communication et événementiel</li><li><strong>Impression numérique et sérigraphie</strong></li><li>Mobile-money, vente Edan, bouquets satellitaires, bureautique</li></ul>Qu'est-ce qui vous intéresse ?",
-      chips: ['Location', 'Tarifs', 'Vidéo', 'Impression'] },
+      answer: "Le Groupe propose :<ul><li><strong>Reportage, montage vidéo, photographie</strong>, infographie, communication et événementiel</li><li><strong>Imprimerie numérique et sérigraphie</strong> sur tous supports</li><li>Un <strong>matériel professionnel</strong> : caméras 4K, appareils photo, drones, régie mobile</li><li><strong>Location de véhicules</strong> avec chauffeur</li><li>Mobile-money, vente Edan, bouquets satellitaires, bureautique</li></ul>Qu'est-ce qui vous intéresse ?",
+      chips: ['Vidéo', 'Impression', 'Matériel', 'Location'] },
     { id: 'location', keys: ['location', 'louer', 'vehicule', 'voiture', 'chauffeur', 'flotte', 'pick', 'hilux', 'land cruiser', 'rav', 'sonata', 'hiace', 'coaster', 'bus', 'minibus', '4x4', 'transport', 'deplacement'],
       answer: "Nous louons des véhicules <strong>avec chauffeur</strong> : Sonata, pick-up (boîte manuelle ou automatique), Hiace Bus, Coaster, dernier RAV 4 et Toyota Land Cruiser (TXL, LC 300, V8). Les tarifs existent pour Libreville et pour l'intérieur du pays.",
       chips: ['Tarifs', 'Demander un devis', 'Au mois'] },
-    { id: 'tarifs', keys: ['tarif', 'prix', 'cout', 'cher', 'montant', 'grille', 'par jour', 'land cruiser', 'rav', 'sonata', 'hiace', 'coaster', 'interieur'],
+    { id: 'tarifs', keys: ['tarif', 'prix', 'cout', 'cher', 'montant', 'grille', 'par jour', 'land cruiser', 'rav', 'sonata', 'hiace', 'coaster', 'interieur', 'pick'],
       answer: "Tarifs par jour, <strong>avec chauffeur</strong> (Libreville / L'Intérieur) :<ul><li>Sonata : 120 000 F</li><li>Pick-up manuel : 170 000 / 200 000 F</li><li>Pick-up automatique : 200 000 / 230 000 F</li><li>Hiace Bus : 170 000 / 200 000 F</li><li>RAV 4 : 170 000 / 200 000 F</li><li>Coaster : 270 000 / 300 000 F</li><li>Land Cruiser TXL : 270 000 / 300 000 F</li><li>Land Cruiser V8 : 350 000 / 400 000 F</li><li>Land Cruiser LC 300 : 370 000 / 400 000 F</li></ul><a class=\"chat__link\" href=\"#location\" data-close>Voir la grille complète</a>",
       chips: ['Demander un devis', 'Au mois'] },
     { id: 'mois', keys: ['mois', 'au mois', 'par mois', 'mensuel', 'forfait', 'longue duree', 'agence', 'entreprise', 'sans chauffeur', 'contrat'],
       answer: "Pour une location <strong>sans chauffeur</strong> ou un <strong>forfait mensuel</strong> (agences et entreprises), nous établissons une proposition sur mesure. Indiquez-nous le véhicule souhaité et la durée :<br>" + waButton("Bonjour GROUPE JÉRUSALEM, je souhaite un forfait de location au mois.", 'Demander un forfait sur WhatsApp') },
-    { id: 'video', keys: ['video', 'reportage', 'montage', 'photo', 'infograph', 'communication', 'evenement', 'regie', 'drone', 'camera', 'film', 'tournage', 'couverture'],
+    { id: 'video', keys: ['video', 'reportage', 'montage', 'photo', 'infograph', 'communication', 'evenement', 'film', 'tournage', 'couverture', 'live', 'diffusion'],
       answer: "Nous réalisons du <strong>reportage</strong>, du <strong>montage vidéo</strong>, de la <strong>photographie</strong> et de l'<strong>infographie</strong>, avec régie mobile, caméras et drones, pour vos événements et votre communication.",
       chips: ['Demander un devis', 'Contact'] },
-    { id: 'impression', keys: ['impression', 'imprim', 'serigraph', 'tee shirt', 'tshirt', 't shirt', 'casquette', 'mug', 'stylo', 'support', 'flocage', 'personnalis', 'cadeau', 'parapluie'],
+    { id: 'materiel', keys: ['materiel', 'equipement', 'camera', 'appareil', 'objectif', 'gimbal', 'stabilisateur', 'trepied', 'flash', 'drone', 'regie', 'sony', 'canon'],
+      answer: "Nous disposons de notre propre <strong>matériel professionnel</strong> : caméras 4K, appareils photo hybrides et objectifs, stabilisateur (gimbal), régie mobile avec table de mixage vidéo, drones, trépieds et flash.",
+      chips: ['Vidéo', 'Demander un devis'] },
+    { id: 'impression', keys: ['impression', 'imprim', 'imprimerie', 'serigraph', 'tee shirt', 'tshirt', 't shirt', 'casquette', 'mug', 'stylo', 'support', 'flocage', 'personnalis', 'cadeau', 'parapluie'],
       answer: "Notre atelier fait de l'<strong>impression numérique et de la sérigraphie</strong> sur tous types de supports : t-shirts, polos, casquettes, mugs, stylos, parapluies et objets personnalisés.",
       chips: ['Demander un devis', 'Contact'] },
     { id: 'autres', keys: ['mobile money', 'mobile-money', 'edan', 'bouquet', 'satellite', 'canal', 'bureautique', 'photocopie'],
@@ -49,8 +52,8 @@
       chips: ['Contact', 'Tarifs'] },
     { id: 'contact', keys: ['contact', 'telephone', 'numero', 'appeler', 'joindre', 'mail', 'email', 'courriel', 'whatsapp', 'parler', 'humain', 'conseiller', 'rappeler'],
       answer: "Vous pouvez nous joindre :<ul><li>Tél. : <a href=\"tel:+24174495964\">+241 74 49 59 64</a> / <a href=\"tel:+24162775259\">62 77 52 59</a></li><li>E-mail : <a href=\"mailto:jerusalemagencedevoyage@gmail.com\">jerusalemagencedevoyage@gmail.com</a></li><li>Siège : derrière l'ENS, Libreville</li></ul>" + waButton("Bonjour GROUPE JÉRUSALEM, je souhaite être recontacté.", 'Écrire sur WhatsApp') },
-    { id: 'groupe', keys: ['groupe', 'societe', 'qui etes', 'presentez', 'gerant', 'directeur', 'dirigeant', 'responsable', 'victor', 'rccm', 'legal'],
-      answer: "GROUPE JÉRUSALEM est une société gabonaise (SUARL) installée à Libreville, dirigée par <strong>M. Victor MOUNDOUNGA MOUNDOUNGA</strong>, gérant. Immatriculée au RCCM sous le n° RG-LBV-2017B23084." },
+    { id: 'groupe', keys: ['groupe', 'societe', 'qui etes', 'presentez', 'rccm', 'legal'],
+      answer: "GROUPE JÉRUSALEM est une société gabonaise (SUARL) installée à Libreville, immatriculée au RCCM sous le n° RG-LBV-2017B23084." },
     { id: 'emploi', keys: ['emploi', 'recrut', 'stage', 'cv', 'candidature', 'travailler chez', 'job', 'poste'],
       answer: "Pour une candidature ou un stage, vous pouvez adresser votre CV à <a href=\"mailto:jerusalemagencedevoyage@gmail.com\">jerusalemagencedevoyage@gmail.com</a>." },
     { id: 'merci', keys: ['merci', 'au revoir', 'bye', 'a bientot', 'parfait', 'super', 'ok merci'],
@@ -59,9 +62,9 @@
 
   var CHIP_MAP = {
     'Nos services': 'services', 'Location': 'location', 'Tarifs': 'tarifs', 'Au mois': 'mois', 'Vidéo': 'video',
-    'Impression': 'impression', 'Demander un devis': 'devis', 'Contact': 'contact', 'Où êtes-vous ?': 'zone'
+    'Impression': 'impression', 'Matériel': 'materiel', 'Demander un devis': 'devis', 'Contact': 'contact', 'Où êtes-vous ?': 'zone'
   };
-  var DEFAULT_CHIPS = ['Nos services', 'Tarifs', 'Demander un devis', 'Où êtes-vous ?', 'Contact'];
+  var DEFAULT_CHIPS = ['Nos services', 'Vidéo', 'Impression', 'Demander un devis', 'Contact'];
 
   function norm(s) {
     return s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9+ ]/g, ' ').replace(/\s+/g, ' ');

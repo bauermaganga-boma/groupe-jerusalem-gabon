@@ -518,3 +518,50 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   .tarifs { table-layout: auto; }
   .loc__table { min-width: 0; overflow-x: auto; }
 }
+
+/* ---------- Mise en avant communication / matériel / imprimerie ---------- */
+.hero__bg { background-position: center 40%; }
+.poles--2 { grid-template-columns: repeat(2, 1fr); }
+.poles--2 .pole__img { aspect-ratio: 16/9; }
+.materiel .split__text > p { color: rgba(248,243,250,.82); }
+.checks--light li { color: rgba(248,243,250,.82); border-bottom-color: rgba(255,255,255,.14); }
+.checks--light strong { color: var(--white); }
+.materiel .mini-gallery { margin-top: 3rem; }
+.mini-gallery--2 { grid-template-columns: repeat(2, 1fr); margin: 3rem 0 0; }
+.mini-gallery--2 img { aspect-ratio: 16/9; }
+#imprimerie .btn { margin-top: 1.6rem; }
+.btn--wa { background: #25d366; color: #0b2e18; }
+.nav__quick { display: none; }
+
+/* Barre d'actions mobile */
+.mbar { display: none; }
+@media (max-width: 900px) {
+  .poles--2 { grid-template-columns: 1fr; }
+  .nav__quick { display: flex; gap: .8rem; margin-top: .4rem; }
+  .nav__quick .btn { padding: .8rem 1.4rem; font-size: .95rem; }
+  .nav .nav__cta { margin-top: .4rem; }
+}
+@media (max-width: 760px) {
+  body { padding-bottom: 68px; }
+  .fab { display: none; }
+  .mbar {
+    display: grid; grid-template-columns: repeat(4, 1fr); position: fixed; left: 0; right: 0; bottom: 0; z-index: 95;
+    background: var(--choco); border-top: 1px solid rgba(255,255,255,.12); padding: .35rem .4rem calc(.35rem + env(safe-area-inset-bottom));
+    box-shadow: 0 -10px 30px -12px rgba(0,0,0,.5);
+  }
+  .mbar__btn {
+    display: flex; flex-direction: column; align-items: center; justify-content: center; gap: .2rem; background: none; border: 0;
+    color: rgba(255,255,255,.9); font: inherit; font-size: .72rem; font-weight: 700; letter-spacing: .02em; padding: .5rem 0; cursor: pointer;
+  }
+  .mbar__btn svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+  .mbar__btn--wa { color: #4be08a; }
+  .chat { bottom: 76px; height: calc(100svh - 96px); left: .5rem; right: .5rem; width: auto; }
+  .hero__content { padding-bottom: 7rem; }
+  .hero__title { font-size: clamp(2.3rem, 11vw, 3.2rem); }
+  .section { padding-block: 4rem; }
+  .btn { width: auto; }
+  .hero__actions { flex-direction: column; align-items: stretch; }
+  .hero__actions .btn { text-align: center; }
+  .gallery { grid-auto-rows: 150px; }
+  .tags span { font-size: .8rem; }
+}

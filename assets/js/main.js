@@ -140,3 +140,9 @@
 
   document.getElementById('year').textContent = new Date().getFullYear();
 })();
+
+// Barre mobile : ouvre l'assistant
+(function () {
+  var b = document.getElementById('mbar-chat'), t = document.getElementById('chat-toggle');
+  if (b && t) b.addEventListener('click', function () { t.click(); });
+})();
